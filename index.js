@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+const db = require('./models');
 
 const app = express();
 
@@ -21,4 +22,6 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 5000
 app.listen(port)
 
-console.log(`Express backend is now listening on ${port}`)
+db.sequelize.sync().then(() => {
+  app.listen(port, () => console.log(`wat2do backend is now listening on ${port}`))
+})
