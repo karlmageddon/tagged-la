@@ -1,14 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('Event', {
+  return sequelize.define('Tags', {
     name: DataTypes.TEXT,
-    category: DataTypes.STRING,
     description: DataTypes.TEXT,
-    image_url: DataTypes.STRING,
-    event_url: DataTypes.STRING,
+    description_source: DataTypes.STRING,
     address: DataTypes.STRING,
     longitude: DataTypes.FLOAT,
     latitude: DataTypes.FLOAT,
-    time: DataTypes.STRING,
-    date: DataTypes.STRING
+    instagram_embed: DataTypes.TEXT
   })
 }
