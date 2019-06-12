@@ -1,5 +1,6 @@
-module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('Tags', {
+'use strict';
+module.exports = (sequelize, DataTypes) => {
+  const Tag = sequelize.define('Tag', {
     name: DataTypes.TEXT,
     description: DataTypes.TEXT,
     description_source: DataTypes.STRING,
@@ -7,5 +8,6 @@ module.exports = function(sequelize, DataTypes) {
     longitude: DataTypes.FLOAT,
     latitude: DataTypes.FLOAT,
     instagram_embed: DataTypes.TEXT
-  })
-}
+  });
+  return Tag;
+};
