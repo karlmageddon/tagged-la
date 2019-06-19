@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap');
+
+.leaflet-container {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+html, body, .leaflet-container {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+  z-index: 999;
+  position: sticky;
+}
+
+.overlay.title {
+  font-family: 'Permanent Marker';
+  padding-top: 20px;
+}
+
+.description {
+  padding-top: 30px;
+}
+
+.sub.header {
+  font-family: 'Roboto'
+}
+
+a, h3.ui.header.address {
+  color: #921E20;
+  font-weight: bold;
+}
+
+.noninteractive {
+  pointer-events: none;
+}
