@@ -3,7 +3,6 @@ import { Map, TileLayer } from 'react-leaflet'
 
 import Description from './Description'
 import TagMarkers from './TagMarkers'
-import apiConfig from './apiKeys'
 
 class CityMap extends React.Component {
   constructor(props){
