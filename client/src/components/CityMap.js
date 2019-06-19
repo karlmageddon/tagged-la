@@ -35,7 +35,7 @@ class CityMap extends React.Component {
 
   render() {
     const position = [34.072014, -118.384078]
-    const mapboxUrl = `https://api.mapbox.com/styles/v1/karlmageddon/cjwu2w0g18zrj1cli1u0ma172/tiles/512/{z}/{x}/{y}?access_token=${process.env.MAPBOX_API_KEY}`
+    const mapboxUrl = `https://api.mapbox.com/styles/v1/karlmageddon/cjwu2w0g18zrj1cli1u0ma172/tiles/512/{z}/{x}/{y}?access_token=${process.env.REACT_APP_MAPBOX_API_KEY}`
 
     return (
       <div>
